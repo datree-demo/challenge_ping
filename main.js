@@ -39,6 +39,9 @@ app.post("/:device_id/:epoch_time", function (request, response) {
 
 app.post("/clear_Data", function (request, response) {
     console.log("clearing data");
+
+    device_list = JSON.stringify({});
+
     response.end();
 });
 
